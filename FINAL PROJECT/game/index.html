@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../game/css/appstyle.css">
+        <title>Capy food collection game</title>
+        <!--  Include the raphael library from the jslibs directory  -->
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <!--  Include main.js file -->
+        <script defer type="text/javascript" src="../game/appscripts/script.js">
+        </script>
+    </head>
+
+  <body>
+
+    <body>
+    
+        <div class="container">
+          <header class="header" id="headerid">
+            <p style="font-size: 16pt; font-family: 'Times New Roman', Times, serif; text-align: center;">NOM!</p>
+            <br>
+            
+
+        </header>
+
+
+        <!-- Replace <div> with <aside> if your content has one aside. For more than one, nest <aside> elements in the <div>. -->
+      <nav class="leftbar" id = "leftbar">
+        <div id="scoreLabel" style="font-size: 20pt">NOMS: 0</div>
+        <div id="instructions">
+            <br>
+            <img src="../game/resources/capygif.gif" width="200" height="100">
+          <u><p style = "font-size: 12pt">Instructions</p></u>
+          <p style = "font-size: 9pt"> 
+            The number of NOMS you get translates to the amount of food capy gets, so try your best to get as many NOMS as possible!<br>
+            <br>
+            You have 1 minute to locate and click on the carrot as many times as possible while it is randomly moving around the sheet.<br>
+            <br>
+            Each time you successfully click on a carrot, you will earn 1 point. <br><br>
+            
+             
+            
+
+          </p>
+        </div> <br>
+        </nav>
+
+        <article class="content" id="centerDiv">
+        </article>
+   
+         <!-- Ditto the previous note about <aside>. -->
+         <aside class="rightbar" id="rightbar"> <!-- assign3: must have id -->
+           <div>Remaining Time: <span id="time"></span></div>
+           <p>Customise your own settings before starting the game!</p>
+           <label for="sliderRadius" class="label">Radius of carrot</label>
+           <input id="sliderRadius" type="range" min="0" max="40" step="0.05" value=".5" class="slider"> 
+           <br>
+           <label for="sliderStrokecolor" class="label">Stroke colour of carrot</label>
+           <input id="sliderStrokecolor" type="range" min="0" max="255" step="0.1" value=".5" class="slider">
+           <br>
+           <label for="sliderStrokeopacity" class="label">Stroke opacity of carrot</label>
+           <input id="sliderStrokeopacity" type="range" min="0" max="1" step="0.01" value=".5" class="slider">
+           <br>
+           <label for="sliderStrokewidth" class="label">Stroke width of carrot</label>
+           <input id="sliderStrokewidth" type="range" min="0" max="10" step="0.1" value="5" class="slider">
+           <br>
+           <br>
+           <a href="../index.html">Continue on your journey here</a><br>
+          
+         </aside>
+
+         <footer class="footer" id="footer">
+            <p style="font-size: 12pt">Select a background!</p>
+    <!--         <div class="tab" id="tabcontainer"> -->
+            <center><button onclick="Start()" class="tablinks" id="bgTab" disabled > Start </button></center>
+            <br>
+    <!--         </div> -->
+           <center><div id="Background" class="difficulty"></div>
+              <img style="margin-left: 10px" id="level1" class="bgimg" src="../game/resources/onsen.jpeg" width="400" height="200">
+              <img id="level2" class="bgimg" src="../game/resources/riverside.jpeg" width="400" height="200">
+              <img id="level3" class="bgimg" src="../game/resources/swamp.jpg" width="400" height="200">
+            </div>
+    
+          </footer>
+        </div>
+      
+      </body>
+    </html>

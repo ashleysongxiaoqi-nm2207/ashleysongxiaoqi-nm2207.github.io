@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../FINAL PROJECT/style.css">
+        <title>Capy's journey</title>
+        <script defer type="text/javascript" src="../FINAL PROJECT/script.js">
+        </script>
+    </head>
+<body>
+<div class="page">
+    <header class="header" style="background-color: rgb(105, 198, 255);">A safe space with capybaras</header>
+    <h4>
+    <br>
+    <img src="../FINAL PROJECT/pics/capy donut.jpeg" width="500" height="400">
+    <br>
+    <br>
+    <button onclick="myFunction()">What does capy want to say?</button>
+    <p id="speech"></p>
+    <script>
+    function myFunction() {
+     document.getElementById("speech").innerHTML = "Let's go on a journey!";
+    }
+    </script>
+    <hr>
+    <h2 style="background-color: rgb(105, 198, 255);">GETTING THROUGH THE DAY WITH CAPY</h2>
+    Life can get overwhelming, let's do this together!
+    <br>
+    <br>
+    <br>
+        
+    
+      </h4>
+    
+      <div id="cq"></div>
+
+      <br>
+      <br>
+
+      <body onload="startTime()"></body>
+      <script>
+      function startTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('cq').innerHTML =  h + ":" + m + ":" + s;
+        setTimeout(startTime, 1000);
+      }
+      
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i};  
+        return i;
+      }
+      </script>
+    <hr>
+    <h2 style="background-color:dodgerblue">WAKEY WAKEY!</h2>
+
+    <br>
+    <br>
+    <button onclick="changeImage()">Wake Capy up!</button>
+    <br /><br />
+    <img id="image" src="../FINAL PROJECT/pics/capy3.jpeg" width="500" height="400">
+    <script>
+
+    var image = document.querySelector('#image');
+    
+    function changeImage() {
+        image.src = "../FINAL PROJECT/pics/capy4.jpeg"; width="500"; height="400";
+    }
+
+</script>
+<br>
+<br>
+<h4>Oh No! Capy looks angry, let's get him some food!</h4>
+<hr>
+<br>
+
+<h2 style="background-color:dodgerblue">Lunch Time!</h2>
+<a href="../FINAL PROJECT/game/index.html">Play a food game to ensure capy's stomach is filled up</a>
+<br>
+<br>
+<img src="../FINAL PROJECT/pics/capy6.jpeg" width="400" height="300">
+<br>
+<br>
+<h3>Capy needs some water now, click on the button to ensure he is hydrated!</h3>
+<button id="waterBtn">Drink!💧</button>
+
+<script>
+const element = document.getElementById("waterBtn");
+element.addEventListener("click", function() {
+alert('Capy thanks you for the water!💧')
+});
+</script>
+
+<hr>
+<br>
+<h2 style="background-color:dodgerblue">A thank you note</h2>
+<center><h4>I hope you've enjoyed your time with capy! <br>
+  Thank you for spending time with capy, it's important to take mental health breaks!
+
+  <hr>
+  <br>
+  <h2 style="background-color:dodgerblue">Portfolio</h2>
+  <h4>This is a compilation of my works.</h4>
+  <a href="https://penguin-dogfish-j3b3.squarespace.com">Click here to view</a>
+
+</h4>
+</center>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

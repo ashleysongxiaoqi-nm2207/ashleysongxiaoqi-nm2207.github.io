@@ -1,0 +1,40 @@
+body {
+    background-color: #ADD8E6 ;
+  }
+  .page {
+    width: 80%;
+    max-width: 960px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #ADD8E6 ;
+    border-radius: 5px;
+  }
+  body {
+    font: 14px/26px 'Bungee', Helvetica, Arial, sans-serif;
+    color: #222;
+    margin: 0px;
+    padding: 0px;
+  }
+  header{
+    font-size: 24px;
+    line-height: 48px;
+  }
+  
+  @font-face { font-family: Bungee; 
+    src: url('../font/Bungee.ttf'); } 
+header {
+font-family: Bungee;
+}
+
+h2 {
+  font-family: Bungee;
+}
+
+@font-face {font-family: Orbitron;
+  src: url('../font/Orbitron.ttf')
+}
+#cq
+{
+font-family: Orbitron;
+font-size: 50px;
+}
