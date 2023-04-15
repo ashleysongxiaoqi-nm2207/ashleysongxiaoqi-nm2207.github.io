@@ -56,6 +56,9 @@ slider2.addEventListener('input', function(ev){changeColor()});
 //Adds event listener to "slider3". When "input" is detected on slider element, the function "changeWidth" is executed
 slider3.addEventListener('input', function(ev){changeWidth()});
 
+// Dot initial appearance 
+dot.attr({fill: "white", 'fill-opacity': 0});
+
 // Change Background
 // These are event listeners for the HTML elements with the id tag "level 1- level 3"
 // When clicked, the addEventListener is executed 
