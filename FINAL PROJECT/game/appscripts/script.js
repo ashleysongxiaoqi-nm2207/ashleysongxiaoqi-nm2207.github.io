@@ -7,7 +7,7 @@ var circleRadius = 30;
 
 // Adding background sound
 // This is a variable called "backgroundSound" that uses JS audio function learnt on this website: https://stackoverflow.com/questions/9419263/how-to-play-audio 
-var backgroundSound = new Audio ("../resources/Capybara After Party pull up sound effect.mp3")
+var backgroundSound = new Audio ("FINAL PROJECT/ game/appscripts/resources/Capybara After Party pull up sound effect.mp3")
 
 // Put the width and heigth of the canvas into variables for convenience
 // This is the width of the canvas element 
