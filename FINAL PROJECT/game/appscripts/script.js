@@ -120,7 +120,7 @@ function Start(){
 // Reference: http://www.java2s.com/ref/javascript/javascript-dom-html-audio-volume-property-set.html#:~:text=document.,volume%20of%20the%20audio%20player.
     setGameAreaBounds();
     backgroundSound.play();
-    backgroundSound.volume=2;
+    backgroundSound.volume=1;
     backgroundSound.loop=false;
     
 }
